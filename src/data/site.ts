@@ -28,7 +28,6 @@ export const site = {
     playDeveloper:
       "https://play.google.com/store/search?q=Atech%20Engineering%20Solutions&c=apps&hl=en",
     appStoreDeveloper: "https://apps.apple.com/us/developer/alexandru-vucolov/id1836241780",
-    linkedin: "https://www.linkedin.com/in/alexandru-vucolov",
   },
 } as const;
 

@@ -89,8 +89,6 @@ export function AppGlyph({
   size?: number;
   className?: string;
 }) {
-  const id = `g-${glyph}-${accent[0].replace("#", "")}-${accent[1].replace("#", "")}`;
-
   return (
     <span
       className={`relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-[28%] shadow-[0_14px_34px_-16px_rgba(0,0,0,0.95)] ring-1 ring-white/15 ${className}`}
@@ -123,7 +121,6 @@ export function AppGlyph({
         {glyphPaths[glyph]}
       </svg>
       <span className="sr-only">{glyph}</span>
-      <span id={id} className="hidden" />
     </span>
   );
 }
