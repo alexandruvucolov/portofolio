@@ -62,7 +62,7 @@ export function Hero() {
             <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-[0.82rem] text-ink-400">
               <span className="inline-flex items-center gap-2">
                 <Check className="h-4 w-4 text-emerald-400" />
-                9 apps live on Google Play &amp; the App Store
+                11 apps live on Google Play &amp; the App Store
               </span>
               <span className="inline-flex items-center gap-2">
                 <Sparkle className="h-4 w-4 text-cyan-glow" />

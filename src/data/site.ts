@@ -7,7 +7,7 @@ export const site = {
   shortBio:
     "I design, build and ship mobile products end-to-end — from the first wireframe to the store release.",
   intro:
-    "Independent app developer and founder of Atech Engineering Solutions. I build production React Native / Expo and Next.js products: games, AI apps, marketplaces and business tools — nine of them live on Google Play and the App Store.",
+    "Independent app developer and founder of Atech Engineering Solutions. I build production React Native / Expo and Next.js products: games, AI apps, marketplaces and business tools — eleven of them live on Google Play and the App Store.",
   location: "Iași, Romania",
   timezone: "EET (UTC+2)",
   email: "sales@atech-tools.com",
@@ -40,8 +40,8 @@ export const navigation = [
 ] as const;
 
 export const stats = [
-  { value: "9", label: "Apps live in stores" },
-  { value: "11", label: "Store listings shipped" },
+  { value: "11", label: "Apps live in stores" },
+  { value: "13", label: "Store listings shipped" },
   { value: "29", label: "Repositories built" },
   { value: "15+", label: "Years of engineering roots" },
 ] as const;

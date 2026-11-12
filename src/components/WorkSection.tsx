@@ -18,7 +18,6 @@ export function WorkSection() {
   const [filter, setFilter] = useState<"all" | Category>("all");
 
   const liveApps = useMemo(() => apps.filter((app) => app.status === "live"), []);
-  const inDevelopment = useMemo(() => apps.filter((app) => app.status === "in-development"), []);
 
   const filtered = useMemo(
     () => (filter === "all" ? liveApps : liveApps.filter((app) => app.category === filter)),
@@ -32,7 +31,7 @@ export function WorkSection() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeading
               eyebrow="Selected work"
-              title="Nine live apps across Google Play and the App Store."
+              title="Eleven live apps across Google Play and the App Store."
               description="Consumer games, AI assistants, utilities and a two-sided marketplace — all designed, engineered and published by me. Every listing below links straight to the store."
             />
             <div className="flex shrink-0 items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
@@ -48,7 +47,7 @@ export function WorkSection() {
                 ))}
               </div>
               <div className="leading-tight">
-                <p className="text-[0.8rem] font-semibold text-white">11 store listings</p>
+                <p className="text-[0.8rem] font-semibold text-white">13 store listings</p>
                 <p className="text-[0.68rem] text-ink-400">Android &amp; iOS</p>
               </div>
             </div>
@@ -108,44 +107,6 @@ export function WorkSection() {
             Nothing in this category yet — check back soon.
           </p>
         ) : null}
-
-        <Reveal delay={120}>
-          <div className="mt-12 rounded-3xl border border-white/10 bg-white/[0.02] p-5 sm:p-6">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <p className="text-[0.68rem] tracking-[0.16em] text-ink-400 uppercase">
-                  In the lab
-                </p>
-                <h3 className="mt-1 text-lg font-semibold text-white">Currently in development</h3>
-              </div>
-              <span className="chip">Prototype builds</span>
-            </div>
-
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              {inDevelopment.map((app) => (
-                <div
-                  key={app.slug}
-                  className="flex items-start gap-3 rounded-2xl border border-white/10 bg-ink-950/40 p-4"
-                >
-                  <AppGlyph glyph={app.glyph} accent={app.accent} size={40} />
-                  <div className="min-w-0">
-                    <p className="text-[0.9rem] font-semibold text-white">{app.name}</p>
-                    <p className="mt-0.5 text-[0.78rem] leading-relaxed text-ink-400">
-                      {app.tagline}
-                    </p>
-                    <div className="mt-2 flex flex-wrap gap-1.5">
-                      {app.tech.slice(0, 3).map((tech) => (
-                        <span key={tech} className="chip text-[0.62rem]">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

@@ -9,8 +9,8 @@ Professional portfolio for **Alexandru Vucolov**, mobile & full-stack engineer a
 ## What's inside
 
 - **Hero** — positioning, availability, headline metrics and a device mock-up.
-- **Work** — 9 live store apps with category filters, tech tags, feature highlights and direct
-  Google Play / App Store links, plus an "in the lab" strip for unreleased prototypes.
+- **Work** — 11 live store apps with category filters, tech tags, feature highlights and direct
+  Google Play / App Store links.
 - **Expertise** — what the delivery chain covers (product, native, billing, store compliance).
 - **Toolkit** — the production stack: React Native, Expo SDK 54, Reanimated, Firebase, Supabase,
   Stripe, RevenueCat, Mapbox, VisionCamera, Skia, AdMob, EAS and GitHub Actions.
@@ -31,6 +31,8 @@ Professional portfolio for **Alexandru Vucolov**, mobile & full-stack engineer a
 | Lumi QR Scanner | Android | Utilities | `com.lumi.qrscanner` |
 | Lumi Snack | Android | Games | `com.lumisnack.app` |
 | Atech Tools | Android + iOS | Business | `com.atechtools.catalog` / `com.atech.atechengineeringsolutions` |
+| WarzoneRunner | Android | Games | `com.AtechEngineeringSolutions.WarzoneRunner` |
+| Block Rumble! | Android | Games | `com.atechengineeringsolutions.blockrumble` |
 
 Store profiles: [Google Play — Atech Engineering Solutions](https://play.google.com/store/search?q=Atech%20Engineering%20Solutions&c=apps) ·
 [App Store — Alexandru Vucolov](https://apps.apple.com/us/developer/alexandru-vucolov/id1836241780)

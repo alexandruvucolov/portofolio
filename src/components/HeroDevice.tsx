@@ -141,7 +141,7 @@ export function HeroDevice() {
         <span className="grid h-6 w-6 place-items-center rounded-full bg-emerald-400/15">
           <Sparkle className="h-3.5 w-3.5 text-emerald-400" />
         </span>
-        9 apps shipped
+        11 apps shipped
       </div>
     </div>
   );

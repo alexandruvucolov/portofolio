@@ -19,7 +19,7 @@ const sora = Sora({
 });
 
 const description =
-  "Alexandru Vucolov — mobile and full-stack engineer, founder of Atech Engineering Solutions. Nine apps live on Google Play and the App Store, built with React Native, Expo and Next.js.";
+  "Alexandru Vucolov — mobile and full-stack engineer, founder of Atech Engineering Solutions. Eleven apps live on Google Play and the App Store, built with React Native, Expo and Next.js.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

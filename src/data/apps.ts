@@ -273,39 +273,48 @@ export const apps: AppEntry[] = [
   {
     slug: "warzone-runner",
     name: "Warzone Runner",
-    tagline: "A Skia-rendered endless runner (in development).",
+    storeTitle: "WarzoneRunner: Military",
+    tagline: "A military-themed runner rendered on a Skia canvas.",
     description:
-      "A side-scrolling runner built on React Native Skia and a custom game loop, with parallax environments, gesture-driven jumps and a scoring system designed for short sessions.",
+      "A side-scrolling military runner built on React Native Skia with a custom game loop: parallax warzones, gesture-driven controls and a scoring curve tuned for short, repeatable sessions. Published on Google Play.",
     category: "games",
     platforms: ["android"],
-    status: "in-development",
-    links: {},
-    bundleIds: ["com.lumi.warzonerunner"],
+    status: "live",
+    links: { play: `${PLAY}com.AtechEngineeringSolutions.WarzoneRunner` },
+    bundleIds: ["com.AtechEngineeringSolutions.WarzoneRunner", "com.lumi.warzonerunner"],
     tech: ["React Native Skia", "react-native-game-engine", "Reanimated", "expo-av"],
-    highlights: ["GPU-accelerated Skia canvas", "Custom 60 fps game loop", "Parallax world layers"],
+    highlights: [
+      "GPU-accelerated Skia rendering",
+      "Custom 60 fps game loop",
+      "Parallax world layers",
+    ],
     accent: ["#ef4444", "#fb923c"],
     glyph: "runner",
   },
   {
     slug: "block-rumble",
     name: "Block Rumble",
-    tagline: "A physics-driven block battle (in development).",
+    storeTitle: "Block Rumble!",
+    tagline: "A physics-driven block battle built in Unity.",
     description:
-      "A Unity prototype exploring physics-based block combat, currently in pre-release while the core loop and ad integration are tuned before store submission.",
+      "A fast arcade battle where physics decides the outcome. Built in Unity with the Google Mobile Ads stack wired in for the free-to-play loop, and published on Google Play.",
     category: "games",
     platforms: ["android"],
-    status: "in-development",
-    links: {},
-    bundleIds: [],
+    status: "live",
+    links: { play: `${PLAY}com.atechengineeringsolutions.blockrumble` },
+    bundleIds: ["com.atechengineeringsolutions.blockrumble"],
     tech: ["Unity", "C#", "Google Mobile Ads"],
-    highlights: ["Physics-based combat loop", "Unity to mobile build pipeline"],
+    highlights: [
+      "Physics-based combat loop",
+      "Ad-supported free-to-play release",
+      "Unity mobile build pipeline",
+    ],
     accent: ["#6366f1", "#22d3ee"],
     glyph: "cubes",
   },
 ];
 
 export const liveApps = apps.filter((app) => app.status === "live");
-export const inDevelopmentApps = apps.filter((app) => app.status === "in-development");
 
 export const appFilters: { id: "all" | Category; label: string }[] = [
   { id: "all", label: "All work" },
