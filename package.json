@@ -1,0 +1,31 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Professional portfolio of Alexandru Vucolov — mobile & full-stack engineer, founder of Atech Engineering Solutions.",
+  "author": "Alexandru Vucolov",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "preview": "npx serve out"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.9.3"
+  }
+}
